@@ -1,11 +1,30 @@
-var url = "https://api.github.com/users/jedcn";
+(function() {
 
-console.log(url);
+  'use strict';
 
-console.log(window.location);
+  function possiblyDefault(defaultUser, location) {
+    var result = defaultUser,
+        firstPartOfHost;
+    if (location && location.host) {
+      firstPartOfHost = location.host.split('.')[0];
+      if (firstPartOfHost.indexOf('localhost') !== 0) {
+        console.log("using firstPartOfHost");
+        result = firstPartOfHost;
+      }
+    }
+    return result;
+  }
 
-// $.ajax({
-//   url: url,
-// }).done(function(userInfo, result, jqXHR) {
-//   console.dir(userInfo);
-// });
+  function user(defaultUser, location) {
+    return possiblyDefault(defaultUser, location);
+  }
+
+  console.log(user('jedcn', window.location));
+
+  // $.ajax({
+  //   url: url,
+  // }).done(function(userInfo, result, jqXHR) {
+  //   console.dir(userInfo);
+  // });
+
+})();

@@ -1,0 +1,31 @@
+{
+  "name": "jedcn.github.com",
+  "version": "1.0.0",
+  "description": "The website at https://jedcn.github.io",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jedcn/jedcn.github.com.git"
+  },
+  "keywords": [
+    "jedcn",
+    "jedcn.github.io",
+    "jedcn.github.com"
+  ],
+  "author": "jedcn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jedcn/jedcn.github.com/issues"
+  },
+  "homepage": "https://github.com/jedcn/jedcn.github.com",
+  "devDependencies": {
+    "eslint": "^0.17.1"
+  }
+}

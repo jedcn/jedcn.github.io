@@ -7,7 +7,8 @@
     "doc": "doc"
   },
   "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js js/main.js",
+    "build": "./node_modules/.bin/webpack js/lib/*.js js/main.js js/build-result.js",
+    "lint": "./node_modules/eslint/bin/eslint.js js/lib/*.js js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/jedcn/jedcn.github.com",
   "devDependencies": {
-    "eslint": "^0.17.1"
+    "eslint": "^0.17.1",
+    "webpack": "^1.7.3"
   }
 }

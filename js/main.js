@@ -17,11 +17,12 @@
   }
 
   function user(defaultUser, location) {
-    return possiblyDefault(defaultUser, location);
+    return possiblyDefault(defaultUser,
+                           location || window.location);
   }
 
   $("body")
-    .html(user("jedcn", window.location));
+    .html(user("jedcn"));
 
   // $.ajax({
   //   url: url,

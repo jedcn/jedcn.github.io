@@ -9,7 +9,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack js/lib/*.js js/main.js js/build-result.js",
     "lint": "./node_modules/eslint/bin/eslint.js js/lib/*.js js/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run-script lint"
   },
   "repository": {
     "type": "git",

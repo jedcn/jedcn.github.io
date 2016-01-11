@@ -1,17 +1,17 @@
 
 # [https://jedcn.github.io][jedcn-github]
 
-[![Circle CI][circle-ci-source-svg]][circle-ci-source-control-panel]
-
-[circle-ci-source-svg]: https://circleci.com/gh/jedcn/jedcn.github.io/tree/source.svg?style=svg
-[circle-ci-source-control-panel]: https://circleci.com/gh/jedcn/jedcn.github.io/tree/source
-
 This is the source for [https://jedcn.github.io][jedcn-github].
 
 [jedcn-github]: https://jedcn.github.io
 
 It is built with [Ruby][ruby-version] and middleman, and hosted on
 Github Pages.
+
+[![Circle CI][circle-ci-source-svg]][circle-ci-source-control-panel]
+
+[circle-ci-source-svg]: https://circleci.com/gh/jedcn/jedcn.github.io/tree/source.svg?style=svg
+[circle-ci-source-control-panel]: https://circleci.com/gh/jedcn/jedcn.github.io/tree/source
 
 [ruby-version]: .ruby-version
 

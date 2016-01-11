@@ -1,0 +1,28 @@
+{
+  "name": "jedcn.github.io",
+  "version": "1.0.0",
+  "description": "Source for http://jedcn.github.io",
+  "main": "README.md",
+  "scripts": {
+    "build": "bundle exec middleman build",
+    "build-and-deploy": "npm run build && ./scripts/deploy.sh",
+    "clean": "rm -rf build && rm -rf tmp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec middleman server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedcn/jedcn.github.io.git"
+  },
+  "keywords": [
+    "jedcn.github.io",
+    "middleman",
+    "node-and-ruby-living-together"
+  ],
+  "author": "jedcn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jedcn/jedcn.github.io/issues"
+  },
+  "homepage": "https://github.com/jedcn/jedcn.github.io#readme"
+}

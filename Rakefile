@@ -1,11 +1,11 @@
+directory 'tmp'
+directory 'source/stylesheets/releases/'
+
 desc 'Install yeti.css'
-task :install_yeti_css => ['source/stylesheets/releases/'] do
-  mkdir_p 'tmp'
+task :install_yeti_css => ['tmp', 'source/stylesheets/releases/'] do
   Dir.chdir('tmp') do
     `wget -O yeti.css-7.1.0.zip 'https://github.com/andyet/yeti.css/archive/v7.1.0.zip'`
     `unzip yeti.css-7.1.0.zip`
     cp 'yeti.css-7.1.0/public/css/main.css', '../source/stylesheets/releases/yeti.css-7.1.0-main.css'
   end
 end
-
-directory 'source/stylesheets/releases/'

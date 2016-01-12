@@ -3,7 +3,11 @@
   <label for='menu-toggle'>Menu</label>
   <ul class='list-unstyled list-inline cf'>
     <li><a href='/'>/</a></li>
+    <% if current_resource.url == '/projects/' %>
+    <li>Projects</li>
+    <% else %>
     <li><a href='/projects'>Projects</a></li>
+    <% end %>
     <li class='pull-right'><a href='/about'>About</a></li>
   </ul>
 </nav>

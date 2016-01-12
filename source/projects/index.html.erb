@@ -1,0 +1,11 @@
+---
+title: Projects
+---
+
+<h3>Most Useful</h3>
+
+<%= partial(:project_list, :locals => { :projects => data.projects.useful }) %>
+
+<h3>Personal</h3>
+
+<%= partial(:project_list, :locals => { :projects => data.projects.personal }) %>

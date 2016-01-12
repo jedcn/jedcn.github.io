@@ -1,0 +1,7 @@
+<ul>
+  <% projects.each do |project| %>
+  <li>
+    <%= link_to project.name, "https://github.com/jedcn/#{project.name}" %> <%= project.desc %>
+  </li>
+  <% end %>
+</ul>

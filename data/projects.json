@@ -1,0 +1,26 @@
+{
+  "useful": [
+    {
+      "name": "reveal-ck",
+      "desc": "Write slides for your next presentation in Markdown."
+    },
+    {
+      "name": "hipchat-hotline",
+      "desc": "Send chat messages from the command line."
+    },
+    {
+      "name": "getting-started-with-slate",
+      "desc": "Never used a Window Manager? Start here."
+    }
+  ],
+  "personal": [
+    {
+      "name": "dot-org-files",
+      "desc": "My Literately programmed dot-files."
+    },
+    {
+      "name": "mac-config",
+      "desc": "How I configure my computer (settings, programs, etc)."
+    }
+  ]
+}

@@ -12,9 +12,17 @@ page '/*.txt', layout: false
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
+projects = ["reveal-ck",
+            "hipchat-hotline",
+            "getting-started-with-slate",
+            "dot-org-files",
+            "mac-config"]
+
+projects.each do |name|
+  external_url = "/project/#{name}/index.html"
+  template = "coming_soon.html"
+  proxy external_url, template, :locals => { :project => name }
+end
 
 # General configuration
 

@@ -1,7 +1,22 @@
-<ul>
-  <% projects.each do |project| %>
-  <li>
-    <%= link_to project.name, "https://github.com/jedcn/#{project.name}" %> <%= project.desc %>
-  </li>
-  <% end %>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% projects.each do |project| %>
+    <tr>
+      <td><%= link_to project.name, "/project/#{project.name}" %></td>
+      <td><%= project.desc %></td>
+      <td>
+        <% project.tags.each do |name| %>
+        <a class='button button-small'><%= name %></a>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

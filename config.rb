@@ -12,18 +12,6 @@ page '/*.txt', layout: false
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
-projects = ["reveal-ck",
-            "hipchat-hotline",
-            "getting-started-with-slate",
-            "dot-org-files",
-            "mac-config"]
-
-projects.each do |name|
-  external_url = "/project/#{name}/index.html"
-  template = "coming_soon.html"
-  proxy external_url, template, :locals => { :project => name }, :ignore => true
-end
-
 # General configuration
 
 # Reload the browser automatically whenever files change

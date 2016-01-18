@@ -2,10 +2,27 @@
 title: Projects
 ---
 
-<h3>Most Useful</h3>
+<% all_projects = sitemap.resources.select { |r| r.path.start_with?('projects')} %>
 
-<%= partial(:project_list, :locals => { :projects => data.projects.useful }) %>
+<h3>Useful</h3>
+<%
+   useful_projects = all_projects.select do |r|
+     r.data["category"] == "useful"
+   end
+   sorted_useful_projects = useful_projects.sort_by do
+     |r| r.data["rank"]
+   end
+%>
+<%= partial(:project_list, :locals => { :projects => sorted_useful_projects }) %>
 
 <h3>Personal</h3>
 
-<%= partial(:project_list, :locals => { :projects => data.projects.personal }) %>
+<%
+   personal_projects = all_projects.select do |r|
+     r.data["category"] == "personal"
+   end
+   sorted_personal_projects = personal_projects.sort_by do
+     |r| r.data["rank"]
+   end
+%>
+<%= partial(:project_list, :locals => { :projects => sorted_personal_projects }) %>

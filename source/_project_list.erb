@@ -9,10 +9,10 @@
   <tbody>
     <% projects.each do |project| %>
     <tr>
-      <td><%= link_to project.name, "/project/#{project.name}" %></td>
-      <td><%= project.desc %></td>
+      <td><%= link_to project.data["title"], project.url %></td>
+      <td><%= project.data["description"] %></td>
       <td>
-        <% project.tags.each do |name| %>
+        <% project.data["tags"].each do |name| %>
         <a class='button button-small'><%= name %></a>
         <% end %>
       </td>

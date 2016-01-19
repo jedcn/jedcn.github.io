@@ -3,7 +3,7 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Tags</th>
+      <th>Categories</th>
     </tr>
   </thead>
   <tbody>
@@ -12,8 +12,10 @@
       <td><%= link_to project.data["title"], project.url %></td>
       <td><%= project.data["description"] %></td>
       <td>
-        <% project.data["tags"].each do |name| %>
-        <a class='button button-small'><%= name %></a>
+        <% project.data["categories"].each do |name| %>
+          <% unless name == ignored_category %>
+          <a class='button button-small'><%= name %></a>
+          <% end %>
         <% end %>
       </td>
     </tr>

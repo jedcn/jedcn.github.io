@@ -1,11 +1,11 @@
 ---
-title: hipchat-hotline
-description: Send chat messages from the command line.
-category: useful
-rank: 200
-tags:
-  - node
+categories:
   - cli
+  - node
+  - useful
+description: Send chat messages from the command line.
+rank: 200
+title: hipchat-hotline
 ---
 
 # hipchat-hotline

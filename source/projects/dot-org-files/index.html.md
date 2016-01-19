@@ -1,11 +1,12 @@
 ---
-title: dot-org-files
-description: My literately programmed dot-files.
-category: personal
-tags:
-  - setup
+categories:
   - emacs
+  - personal
+  - setup
   - zsh
+description: My literately programmed dot-files.
+title: dot-org-files
+
 ---
 
 Coming Soon..

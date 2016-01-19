@@ -1,12 +1,12 @@
 ---
-title: reveal-ck
-description: Write slides for your next presentation in Markdown.
-category: useful
-rank: 100
-tags:
-  - ruby
-  - cli
+categories:
   - app
+  - cli
+  - ruby
+  - useful
+description: Write slides for your next presentation in Markdown.
+rank: 100
+title: reveal-ck
 ---
 
 # reveal-ck

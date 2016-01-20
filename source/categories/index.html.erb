@@ -1,0 +1,23 @@
+---
+title: Categories
+---
+
+<section>
+  <h2>Categories</h2>
+  <% all_categories.sort.each do |name| %>
+    <a class='button button-small' href="#<%= name %>"><%= name %></a>
+  <% end %>
+</section>
+
+<% all_categories.sort.each do |name| %>
+  <section>
+    <h3 id="<%= name %>"><%= name %></h3>
+    <ul>
+      <% projects_with_category(name).each do |project| %>
+        <li>
+          <%= link_to project.data["title"], project.url %>
+        </li>
+    <% end %>
+    </ul>
+  </section>
+<% end %>

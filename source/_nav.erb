@@ -8,6 +8,11 @@
     <% else %>
     <li><a href='/projects'>Projects</a></li>
     <% end %>
+    <% if current_resource.url == '/categories/' %>
+    <li>Categories</li>
+    <% else %>
+    <li><a href='/categories'>Categories</a></li>
+    <% end %>
     <li class='pull-right'><a href='/about'>About</a></li>
   </ul>
 </nav>

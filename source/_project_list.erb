@@ -14,7 +14,7 @@
       <td>
         <% project.data["categories"].each do |name| %>
           <% unless name == ignored_category %>
-          <a class='button button-small'><%= name %></a>
+          <a class='button button-small' href="/categories#<%= name %>"><%= name %></a>
           <% end %>
         <% end %>
       </td>

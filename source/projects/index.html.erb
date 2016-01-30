@@ -22,3 +22,9 @@ title: Projects
           { :projects => personal_projects,
             :ignored_category => 'personal' })
 %>
+
+<h3>Miscellaneous</h3>
+<%=
+misc_projects = all_projects - useful_projects - personal_projects
+partial(:project_list, :locals => { :projects => misc_projects })
+%>

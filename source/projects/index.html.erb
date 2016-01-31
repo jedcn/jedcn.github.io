@@ -28,3 +28,34 @@ title: Projects
 misc_projects = all_projects - useful_projects - personal_projects
 partial(:project_list, :locals => { :projects => misc_projects })
 %>
+
+<h3>
+  Impact
+</h3>
+
+<p>
+  Nothing is world famous, but..
+</p>
+
+<ul>
+  <li>
+    Hundreds of engineers, scientists, and educators have used
+    <%= link_to 'reveal-ck', '/projects/reveal-ck' %> to build
+    presentations.
+  </li>
+  <li>
+    My team members get direct HipChats whenever their projects build
+    or their code is deployed with
+    <%= link_to 'hipchat-hotline', '/projects/hipchat-hotline' %>.
+  </li>
+  <li>
+    I've built custom
+    <%= link_to 'lint rules', '/projects/coffeelint-prefer-fewer-parens' %>
+    so that my team can enforce their styles programmatically.
+  </li>
+  <li>
+    Dozens of my co-workers continue to use
+    <%= link_to 'getting-started-with-slate', '/projects/getting-started-with-slate' %>
+    as their first Window Manager.
+  </li>
+</ul>

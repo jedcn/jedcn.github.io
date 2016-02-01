@@ -36,9 +36,11 @@ echo
 echo
 
 # Step 2
-echo "Deleting old content"
+echo "Deleting old content (but saving circle.yml)"
 pushd $WORK_DIR
 git rm -rf *
+git reset HEAD circle.yml
+git checkout circle.yml
 popd
 echo
 echo

@@ -28,7 +28,7 @@ reveal-ck operates in two modes:
   bunch of files.
 * It can serve as a dynamic presentation environment: starts up a
   server, you can view the presentation in a browser, make changes
-  with your favorite text editor, have them LiveReloaded, etc).
+  with your favorite text editor, have them LiveReloaded, etc.
 
 ## Motivation
 

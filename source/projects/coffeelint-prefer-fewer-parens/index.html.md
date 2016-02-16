@@ -48,4 +48,4 @@ Putting my personal feelings aside, it is vital that a team be able to
 focus on *analyzing the logic of a code change rather than losing even
 the smallest moment of time to stylistic concerns*.
 
-And so, I created this rule for them.
+And so, I created this rule for us.

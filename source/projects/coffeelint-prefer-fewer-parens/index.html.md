@@ -12,8 +12,10 @@ title: coffeelint-prefer-fewer-parens
 
 ## Overview
 
-This project defines a rule within the [CoffeeLint] eco-system.
+[coffeelint-prefer-fewer-parens] defines a rule within the
+[CoffeeLint] eco-system.
 
+[coffeelint-prefer-fewer-parens]: https://www.npmjs.com/package/coffeelint-prefer-fewer-parens
 [CoffeeLint]: http://www.coffeelint.org/
 
 When active, this CoffeeLint rule can find situations where you

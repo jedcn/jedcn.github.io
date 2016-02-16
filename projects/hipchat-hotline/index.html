@@ -29,7 +29,40 @@
 
 <p><a href="https://github.com/jedcn/hipchat-hotline">Source</a></p>
 
-<p>Coming Soon..</p>
+<h2 id="overview">Overview</h2>
+
+<p><a href="https://www.npmjs.com/package/hipchat-hotline">hipchat-hotline</a> provides a command line interface for sending
+messages via <a href="https://hipchat.com">HipChat</a> using node.</p>
+
+<p>Once installed globally, you easily can send hipchat messages from
+your terminal or from shell scripts.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Before I wrote hipchat-hotline, my team members and I were building
+our code in Jenkins, but we were all relying on HipChat "Room
+Notifications" to let us know how the build went.</p>
+
+<p>This was problematic. What we really we wanted was a direct message so
+that we wouldn't miss information we were depending on.</p>
+
+<p>We already had a node environment to build our code, so I installed
+hipchat-hotline into our Jenkins instances and setup a Post Build
+Action to send messages directly to a user.</p>
+
+<p>I sent messages to the email address on the last commit:</p>
+
+<pre><code>git log -n 1 --oneline --format="%ae" HEAD
+</code></pre>
+
+<p>And I would include the first line of their commit message:</p>
+
+<pre><code>git log -n 1 --oneline HEAD
+</code></pre>
+
+<p>Beyond build jobs, hipchat-hotline proved useful in any situation
+where we wanted to communicate from an automated jenkins job to the
+greater HipChat community– code deploys, configuration changes, etc.</p>
 
       </div>
     </div>

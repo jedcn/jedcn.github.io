@@ -29,7 +29,45 @@
 
 <p><a href="https://github.com/jedcn/coffeelint-prefer-fewer-parens">Source</a></p>
 
-<p>Coming Soon..</p>
+<h2 id="overview">Overview</h2>
+
+<p>This project defines a rule within the <a href="http://www.coffeelint.org/">CoffeeLint</a> eco-system.</p>
+
+<p>When active, this CoffeeLint rule can find situations where you
+could've relied on CoffeeScript's implicit parenthesis.</p>
+
+<p>Here are explicit parenthesis:</p>
+
+<pre><code>Math.pow(2, 3)
+</code></pre>
+
+<p>But the parens in this case are not needed. The following is
+equivalent:</p>
+
+<pre><code>Math.pow 2, 3
+</code></pre>
+
+<p>When this rule is configured, it actively rejects the former and
+pushes you to write the latter.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>I created the rule for two reasons:</p>
+
+<ol>
+  <li><strong>I believe</strong> you should only have style rules that are enforceable via lint.</li>
+  <li><strong>My team agreed</strong> that this was the best way to write CoffeeScript.</li>
+</ol>
+
+<p>It is important to note that <strong>I do not like</strong> writing CoffeeScript
+this way. I think you are less likely to get in trouble if you always
+use explicit parens.</p>
+
+<p>Putting my personal feelings aside, it is vital that a team be able to
+focus on <em>analyzing the logic of a code change rather than losing even
+the smallest moment of time to stylistic concerns</em>.</p>
+
+<p>And so, I created this rule for them.</p>
 
       </div>
     </div>
